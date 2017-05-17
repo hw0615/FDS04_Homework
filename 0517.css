@@ -1,0 +1,73 @@
+@charset "utf-8";
+body{
+    margin: 0 auto;
+}
+.wrapper{
+    box-sizing: border-box;
+    background: yellow;
+    /*width: 1000px;*/
+    line-height: 200px;
+    margin: 0 100px;
+}
+.wrapper::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper div{
+    background: pink; 
+    border: 1px solid #fff;
+    width: 200px;
+    height: 200px;
+    /*float: right;*/
+    text-align: center;
+    position: relative; 
+}
+.wrapper div:nth-child(1){
+    float: right;
+}
+.wrapper div:nth-child(2){
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+.wrapper div:nth-child(3){
+
+}
+.wrapper div:nth-child(4){
+
+}
+.wrapper div:nth-child(5){
+    position: absolute;
+    top: 0;
+    right: 500px;
+}
+.wrapper div:nth-child(6){
+    position: absolute;
+    top: 0px;
+    right: 300px;
+}
+.wrapper div:nth-child(7){
+
+}
+.wrapper div:nth-child(8){
+
+}
+.wrapper div:nth-child(9){
+
+}
+.wrapper div:nth-child(10){
+
+}
+.wrapper div:nth-child(11){
+
+}
+.wrapper div:nth-child(12){
+
+}
+.wrapper div:nth-child(10),
+.wrapper div:nth-child(12),
+.wrapper div:nth-child(14),
+.wrapper div:nth-child(16){
+   float: left; 
+}
