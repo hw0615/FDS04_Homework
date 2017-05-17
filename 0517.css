@@ -5,69 +5,54 @@ body{
 .wrapper{
     box-sizing: border-box;
     background: yellow;
-    /*width: 1000px;*/
     line-height: 200px;
-    margin: 0 100px;
+    margin: 0 auto;
+    width: 800px;
+    height: 800px;
+}
+.box{
+    float: left;
 }
 .wrapper::after{
     content: "";
     display: block;
     clear: both;
 }
-.wrapper div{
-    background: pink; 
-    border: 1px solid #fff;
+.wrapper [class^="box-"]{ 
     width: 200px;
     height: 200px;
-    /*float: right;*/
     text-align: center;
-    position: relative; 
 }
-.wrapper div:nth-child(1){
+.box-1, .box-5, .box-9, .box-11, .box-13{
+    background: #888;
+}
+.box-2, .box-6, .box-10, .box-12, .box-14{
+    background: #aaa;
+}
+.box-3, .box-7, .box-15{
+    background: #bbb;
+}
+.box-4, .box-8, .box-16{
+    background: #ccc;
+}
+.boxw-1{
+    float: right;
+    width: 200px;
+}
+.boxw-2{
+    width: 400px;
     float: right;
 }
-.wrapper div:nth-child(2){
-    position: absolute;
-    top: 200px;
-    right: 100px;
+.boxw-3{
+    width: 400px;
+    float: right;
 }
-.wrapper div:nth-child(3){
-
+.boxw-4{
+    width: 200px;
+    margin-top: -400px;
+    float: left;
 }
-.wrapper div:nth-child(4){
-
-}
-.wrapper div:nth-child(5){
-    position: absolute;
-    top: 0;
-    right: 500px;
-}
-.wrapper div:nth-child(6){
-    position: absolute;
-    top: 0px;
-    right: 300px;
-}
-.wrapper div:nth-child(7){
-
-}
-.wrapper div:nth-child(8){
-
-}
-.wrapper div:nth-child(9){
-
-}
-.wrapper div:nth-child(10){
-
-}
-.wrapper div:nth-child(11){
-
-}
-.wrapper div:nth-child(12){
-
-}
-.wrapper div:nth-child(10),
-.wrapper div:nth-child(12),
-.wrapper div:nth-child(14),
-.wrapper div:nth-child(16){
-   float: left; 
+.box910{
+    width: 200px;
+    float: right;
 }
